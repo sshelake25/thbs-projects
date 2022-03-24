@@ -15,7 +15,7 @@
 <body>
     <h1>toaster messages</h1>
     <button class="btn btn-primary" id="showToster"> Show toaster message </button>
-    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div id="liveToast" class="toast position-absolute  bottom-0 end-0 bg-success" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
             <i class="bi-alarm"></i>
             <strong class="me-auto">Please take action</strong>
@@ -31,12 +31,31 @@
         let mybtn = document.getElementById('showToster');
         let toasterMessage = document.getElementById('liveToast');
 
-        mybtn.addEventListener('click', function () { // anamous function 
-
+        window.onload = (event) => {
             let myTInstance = new bootstrap.Toast(toasterMessage)
-
             myTInstance.show();
-        });
+        };
+
+
+        mybtn.addEventListener('click', () => { // anamous function
+            let myTInstance = new bootstrap.Toast(toasterMessage)
+            myTInstance.show();
+        }
+        );
+
+
+        function sum(n1, n2) {
+            return n1 + n2;
+        }
+
+        let add2 = sum(20, 65);
+
+        // flat arrow function // new way of writing unction in js
+        let myadd2 = (n1, n2) => {
+            return n1 + n2;
+        }
+
+        let final_res = myadd2(20, 30)
 
     </script>
 
