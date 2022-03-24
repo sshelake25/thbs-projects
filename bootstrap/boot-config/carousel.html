@@ -8,27 +8,39 @@
 
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 </head>
 
 <body>
-
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <!-- <div class="carousel-indicators">
+    <h1>toaster messages</h1>
+    <button class="btn btn-primary" id="showToster"> Show toaster message </button>
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <i class="bi-alarm"></i>
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+    <br>
+    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
-        </div> -->
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./images/a.jpg" width="600" height="400" class="d-block w-100" alt="...">
             </div>
-            <!-- <div class="carousel-item">
-                <img src="./images/aa.PNG" width="600" height="400" class="d-block w-100" alt="...">
-            </div> -->
+
             <div class="carousel-item">
                 <img src="./images/eff.jpg" width="600" height="400" class="d-block w-100" alt="...">
             </div>
@@ -43,10 +55,10 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
 
     <br>
-    <h2>light veriation </h2>
+    <!-- <h2>light veriation </h2>
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
@@ -87,7 +99,19 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-    </div>
+    </div> -->
+
+    <script>
+        let myToster = document.getElementById('liveToast');
+
+        document.getElementById('showToster') //ref of button
+            .addEventListener('click', function () { //attached event to element js
+
+                var toast = new bootstrap.Toast(myToster)
+                toast.show();
+
+            });
+    </script>
 </body>
 
 </html>
