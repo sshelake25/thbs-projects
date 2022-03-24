@@ -43,3 +43,31 @@ body {
 .s-border {
      border-top: 1px solid grey;
 }
+
+
+@media (min-width: 650px) {
+
+    .t-image {
+        border: 10px solid red;
+        top: 50px;
+        position: relative;
+    }
+
+}
+
+
+@media (max-width: 700px)  and (min-width: 400px){ 
+
+
+}
+
+
+@media (max-width: 800px) {
+
+    .t-image {
+        border: 10px solid rgb(0, 255, 98);
+        top: 100px;
+        position: relative;
+    }
+
+}
