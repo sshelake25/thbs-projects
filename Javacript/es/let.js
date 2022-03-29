@@ -36,9 +36,7 @@ let single = message + 'hello\n' + 'world\n' + 'my\n' + 'name\n' + 'is\n' + 'sur
 
 console.log(single)
 // ES6 ways of string concat 
-let myMessage =
-    `
-${message}
+let myMessage = `${message}
 hello
 world
 i
@@ -46,7 +44,6 @@ am
 on
 newline
 ${message}
-without adding
-`;
+without adding`;
 
 console.log(myMessage);
