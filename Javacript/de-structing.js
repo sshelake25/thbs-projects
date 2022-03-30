@@ -52,31 +52,11 @@ let cmpy = {
     name_ss: 'thbs',
     noOfEmp: 100,
     foundation: 'March 2020',
-    address: {
-        premant: {
-            city: 'mum'
-        },
-        current: {
-            city: 'bang',
-            pin: 2020
-        }
-    }
 };
+//renameing ---> proname: renamedName
+let { name_ss, noOfEmp, foundation: renamedFoundation} = cmpy;
 
-//cmpy.address.current.city// 
-//cmpy.address.current.pin// 
-//cmpy.address.current.abc// 
-
-
-//nested object property destructiing 
-let {
-    noOfEmp,
-    foundation,
-    address: { premant: { city: mycity  } },
-    address: { current: { city: ccity } }
-} = cmpy;
-
-console.log(noOfEmp, foundation, mycity, ccity);
+console.log(name_ss, noOfEmp, foundation);
 
 //We will continue, please start performing labs aroud 
 // diffrent features we have covers 
