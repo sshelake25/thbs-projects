@@ -72,8 +72,25 @@ let cmpy = {
 let {
     noOfEmp,
     foundation,
-    address: { premant: { city } },
-    address: { current: { pin } }
+    address: { premant: { city: mycity  } },
+    address: { current: { city: ccity } }
 } = cmpy;
 
-console.log(noOfEmp, foundation, city, pin);
+console.log(noOfEmp, foundation, mycity, ccity);
+
+//We will continue, please start performing labs aroud 
+// diffrent features we have covers 
+
+// Lab Taks 
+// -----
+// 1 null vs undefined
+// 2. rest and spead obs 
+// 3. defaul value to function 
+// 4. array and object destring 
+// 5. create promise object --
+       // that value should resolve as 
+       //---> "finnaly learned promised in js"
+
+// // if you finish above list, please continue on 
+// //JD page assement 
+
