@@ -54,7 +54,7 @@ function addImageToBody(imageResponse) {
   body.append(myImage);
 }
 
-loadImages('https://mdn.github.io/js-examples/promises-test/myLittleVader.jpg')
+loadImages('https://avatars.githubusercontent.com/u/6078720?s=500&v=4')
     .then(
         (sucess) => {
             addImageToBody(sucess);
